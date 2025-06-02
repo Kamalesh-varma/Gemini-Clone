@@ -6,7 +6,7 @@ import {
 
 const MODEL_NAME = "gemini-1.5-flash-latest";
 // ❗ Directly writing the API key (NOT RECOMMENDED for production)
-const API_KEY = "AIzaSyA4cXSn-SHj5sRhr-uXKVhHTXEE9D5cEDY" 
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY; 
 
 async function runChat(prompt) {
   if (!API_KEY) {
